@@ -1,0 +1,133 @@
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+/* #region topbar */
+#topbar {
+    height: 45px;
+    border-bottom: 1px solid #d0d7de;
+    background-color: #f6f8fa;
+}
+#topbar-leftblank {
+    width: 280px;
+    margin-right: 20px;
+}
+#lang-transfer {
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+#topbar-nav {
+    width: 860px;
+}
+#topbar-nav-list {
+    height: 42px;
+    line-height: 42px;
+}
+#topbar-nav-list li {
+    float: left;
+    padding: 0 30px;
+}
+#lang-transfer:hover,#topbar-nav-list li:hover {
+    font-style: italic;
+    color: #0969da;
+    cursor: pointer;
+}
+.active-nav-zone {
+    border-bottom: 2px solid #0969da;
+}
+#topbar-nav-list .top-nav-text {
+    font-size: 14px;
+    margin-left: 5px;
+}
+#topbar-nav-list .iconfont {
+    font-size: 18px;
+}
+/* #endregion topbar */
+
+/* #region main-zone */
+#main-zone {
+    margin-top: 20px;
+}
+#profile {
+    width:280px;
+    height: 1200px;
+    position: relative;
+}
+#main-avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    margin:20px;
+    border: 1px solid #d0d7de;
+}
+#alt-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top:215px;
+    left: 180px;
+    border: 1px solid #d0d7de;
+}
+#alt-avatar:hover {
+    cursor: pointer;
+}
+.sidebar-info-text {
+    margin-left: 20px;
+}
+#full-name {
+    color: #1F2328;
+    font-size: 22px;
+    margin-top: 35px;
+}
+#social-work {
+    color: #656D76;
+    font-size: 18px;
+    margin-top:15px
+}
+#description {
+    font-size: 16px;
+    text-align: left;
+    margin-top:15px
+}
+#sidebar-info-list {
+    margin-top: 15px;
+}
+#sidebar-info-list li {
+    margin-left: 20px;
+}
+#sidebar-info-list .icon-info{
+    font-size: 14px;
+    margin-left: 5px;
+}
+#sidebar-info-list .iconfont{
+    font-size: 18px;
+}
+#university-link:hover {
+    color: #0969da;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#site-nav {
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #d0d7de;
+    padding: 0 20px;
+    background-color: #f6f8fa;
+}
+#github-link,#zhihu-link {
+    font-size: 25px;
+    margin-right: 10px;
+}
+#github-link:hover,#zhihu-link:hover {
+    color: #0969da;
+}
+#main-page {
+    width: 860px;
+    background-color: skyblue;
+    height: 800px;
+}
+/* #endregion main-zone */
