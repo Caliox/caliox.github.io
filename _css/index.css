@@ -127,7 +127,53 @@
 }
 #main-page {
     width: 860px;
-    background-color: skyblue;
     height: 800px;
+    margin-top: 20px;
+}
+#doc-gallery-zone {
+    margin-bottom: 20px;
+}
+#all-doc-nav:hover {
+    font-weight: bold;
+    color: #0969da;
+    cursor: pointer;
+}
+.doc-box {
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    border: 1px solid #d0d7de;
+    margin: 5px 0;
+    padding: 10px;
+}
+.doc-box-header .ongoing {
+    border-left: 3px solid #e34c26;
+    padding-left: 2px;
+}
+.doc-box-header .complete {
+    border-left: 3px solid #0969da;
+    padding-left: 2px;
+}
+.doc-box-title {
+    color: #0969da;
+    font-weight: bold;
+}
+.doc-box-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#skill-gallery-zone {
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: #f6f8fa;
+}
+#skill-gallery-zone span {
+    font-size: 14px;
+}
+#skill-gallery-zone .iconfont {
+    font-size: 20px;
+    color: #0969da;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 /* #endregion main-zone */
