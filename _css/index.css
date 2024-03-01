@@ -53,7 +53,6 @@
 }
 #profile {
     width:280px;
-    height: 1200px;
     position: relative;
 }
 #main-avatar {
@@ -127,7 +126,6 @@
 }
 #main-page {
     width: 860px;
-    height: 800px;
     margin-top: 20px;
 }
 #doc-gallery-zone {
@@ -177,3 +175,10 @@
     margin-right: 5px;
 }
 /* #endregion main-zone */
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
