@@ -205,7 +205,8 @@ aside {
   flex: 1;
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  padding: 6px;
+  padding: 0;
+  overflow: hidden;
   background-color: #fff;
   height: 260px;
   display: flex;
@@ -581,6 +582,10 @@ aside {
     flex: auto;
     position: static;
     height: auto;
+  }
+
+  .charts-wrapper {
+    flex-direction: column;
   }
 
   .tabs {
