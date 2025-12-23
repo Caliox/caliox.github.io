@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calio Xu - Biostatistician</title>
+    <link rel="shortcut icon" href="assets/icons/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css">
+    <!--icon font online style-->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4446551_j0zhn8zsg1h.css" />
+</head>
+
+<body>
+    <button class="lang-switch" onclick="toggleLanguage()">中文</button>
+    <div class="container">
+        <!--side bar-->
+        <aside>
+            <div class="avatar-container">
+                <img src="assets/avatars/default.jpg" alt="Avatars">
+            </div>
+
+            <h1 style="font-size: 26px; font-weight: 600; line-height: 1.25;">Calio Xu</h1>
+            <p class="profile-bio">
+                <span class="other-text" data-key="bio_title">Clinical Trial Biostatistician</span>
+            </p>
+            <p class="profile-bio">
+                <span class="other-text" data-key="bio_interest">Research Interests:</span>
+            </p>
+            <p class="interest-item">
+                ☑ <span class="other-text" data-key="interest1">Survival Analysis</span>
+            </p>
+            <p class="interest-item">
+                ☑ <span class="other-text" data-key="interest2">Risk-based Monitoring</span>
+            </p>
+            <br>
+            <ul class="profile-details">
+                <li>🏫<span class="fixed-text" data-key="info_school">Jiangxi University of Finance and Economics</span>
+                </li>
+                <li>🎓 <span class="fixed-text" data-key="info_degree">Master of Applied Statistics</span></li>
+                <li>📍 <span class="fixed-text" data-key="info_location">Nanjing, China</span></li>
+                <li>📧 Calio.Xu@outlook.com</li>
+            </ul>
+            <div class="follow-box">
+                <p class="profile-bio"><span class="fixed-text" data-key="info_follow">Follow</span></p>
+                <div class="site-nav">
+                    <a id="github-link" href="https://github.com/caliox" class="iconfont icon-github"></a>
+                    <a id="zhihu-link" href="https://www.zhihu.com/people/caliox" class="iconfont icon-zhihu"></a>
+                </div>
+            </div>
+        </aside>
+        <!--main zone-->
+        <main class="main-content">
+            <!-- tab header -->
+            <div class="tabs">
+                <div class="tab-item active" onclick="switchTab('profile', this)">
+                    👨🏻‍💼 <span class="fixed-text" data-key="nav_profile">Profile</span>
+                </div>
+                <div class="tab-item" onclick="switchTab('blogs', this)">
+                    ✍️ <span class="fixed-text" data-key="nav_blogs">Blogs</span>
+                </div>
+                <div class="tab-item" onclick="switchTab('resources', this)">
+                    📦 <span class="fixed-text" data-key="nav_resources">Resources</span>
+                </div>
+                <div class="tab-item" onclick="switchTab('resume', this)">
+                    💡 <span class="fixed-text" data-key="nav_resume">Resume</span>
+                </div>
+            </div>
+            <!-- profile view -->
+            <div id="view-profile" class="content-section active">
+                <div class="readme-box">
+                    <div class="readme-header">👋 <span class="fixed-text" data-key="readme">About Me</span></div>
+                    <p style="margin-bottom: 16px;">
+                        <span class="other-text" data-key="greeting">
+                            Hi, I'm a statistician specializing in clinical trial design and data analysis. Here are my
+                            project experiences and skills.
+                        </span>
+                    </p>
+                    <h4 style="margin-top:20px;">
+                        📊 <span class="fixed-text" data-key="rm_Exp">Clinical Trial Project Experience</span>
+                    </h4>
+                    <p class="exp-summary-text">
+                        ● <span class="other-text" data-key="exp_sum1">
+                            4 years of experience in clinical trial design and statistical analysis.
+                        </span>
+                    </p>
+                    <p class="exp-summary-text">
+                        ● <span class="other-text" data-key="exp_sum2">
+                            Familiar with statistical tasks throughout the clinical trial process, including trial
+                            design, randomization and blinding, sample size calculation, data review meetings, IDMC,
+                            statistical analysis plans and reports.
+                        </span>
+                    </p>
+                    <p class="exp-summary-text">
+                        ● <span class="other-text" data-key="exp_sum3">
+                            Led or was deeply involved in the design and statistical analysis of nearly 30 clinical
+                            trials across therapeutic areas such as oncology, neurological disorders, renal diseases,
+                            ophthalmology, hematology, assisted reproduction, communicable diseasesand (Hepatitis B),
+                            and more.
+                        </span>
+                    </p>
+                    <div class="charts-wrapper">
+                        <div class="chart-container">
+                            <img src="assets/images/Exp-Phase.png" alt="Experience Summary by Phase">
+                        </div>
+                        <div class="chart-container">
+                            <img src="assets/images/Exp-Therapy.png" alt="Experience Summary by Phase">
+                        </div>
+                    </div>
+                    <h4 style="margin-top:20px;">🛠️ <span class="fixed-text" data-key="rm_Skill">My Skills</span></h4>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>SAS</span><span class="fixed-text" data-key="skill_grd4">Expert</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>SQL Language</span><span class="fixed-text" data-key="skill_grd4">Expert</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>R Language</span><span class="fixed-text" data-key="skill_grd3">Proficient</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 75%; background-color:var(--skill-color3)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>Python</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>C-Sharp</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>VBA</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-meta">
+                            <span>Front-End Development (HTML+CSS+JavaScript)</span>
+                            <span class="fixed-text" data-key="skill_grd2">Competent</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="font-size:16px; margin-bottom:10px;">
+                    📌 <span class="fixed-text" data-key="pinned">Pinned</span>
+                </h3>
+                <div class="pin-container">
+                    <div class="pin-box">
+                        <a onclick="navPinned('blogs',1,'pinned1')">Survival Analysis</a>
+                        <p>Gain a systematic understanding of the fundamental knowledge about Survival Analysis.</p>
+                    </div>
+                    <div class="pin-box">
+                        <a onclick="navPinned('resources',2,'pinned2')">SAS SID Files</a>
+                        <p>Obtain free SAS SID files found through publicly available searches.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- blogs view -->
+            <div id="view-blogs" class="content-section">
+                <div class="drawer-card book-style" id="pinned1">
+                    <div class="drawer-header" onclick="toggleDrawer(this)">
+                        <div class="drawer-header-text">
+                            <span class="chapter-num">01</span>
+                            <span class="chapter-title">生存分析（Survival Analysis）</span>
+                        </div>
+                        <div class="drawer-arrow"></div>
+                    </div>
+                    <div class="drawer-body">
+                        <div class="doc-list">
+                            <a href="blogs/Survival Analysis/1. Introduction to Survival Analysis.html" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">1. Introduction to Survival Analysis</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                            <a href="blogs/Survival Analysis/2. Kaplan-Meier Survival Curves and the Log-Rank Test.html"
+                                class="doc-item" target="_blank">
+                                <span class="doc-title">2. Kaplan-Meier Survival Curves and the Log-Rank Test</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                            <a href="blogs/Survival Analysis/3. The Cox Proportional Hazards Model and Its Characteristics.html"
+                                class="doc-item" target="_blank">
+                                <span class="doc-title">3. The Cox Proportional Hazards Model and Its
+                                    Characteristics</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                            <a href="blogs/Survival Analysis/4. Evaluating the Proportional Hazards Assumption.html"
+                                class="doc-item" target="_blank">
+                                <span class="doc-title">4. Evaluating the Proportional Hazards Assumption</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                            <a href="blogs/Survival Analysis/5. The Stratified Cox Procedure.html" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">5. The Stratified Cox Procedure</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                            <a href="blogs/Survival Analysis/6. Extension of the Cox Proportional Hazards Model for Time-Dependent Variables .html"
+                                class="doc-item" target="_blank">
+                                <span class="doc-title">6. Extension of the Cox Proportional Hazards Model for
+                                    Time-Dependent Variables</span>
+                                <span class="doc-meta">2025/12/23</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- resources view -->
+            <div id="view-resources" class="content-section">
+                <div class="drawer-card repo-style">
+                    <div class="drawer-header" onclick="toggleDrawer(this)">
+                        <div class="drawer-header-text">
+                            <span class="repo-icon">📂 </span>
+                            <span class="repo-title">统计软件</span>
+                        </div>
+                        <div class="drawer-arrow"></div>
+                    </div>
+                    <div class="drawer-body">
+                        <div class="doc-list">
+                            <a href="https://pan.baidu.com/s/1F5sRe8O3NaBkE390Ea2D2Q?pwd=f4dr" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">SAS 9.4</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://pan.baidu.com/s/1QY_6JATI8AFXOI-SmD9SjQ?pwd=iahi" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">IBM SPSS 26.0</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://pan.baidu.com/s/1nu2DpkVJY5hHnrgXUluQgw?pwd=snjj" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">PASS 15.0</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://pan.baidu.com/s/1J6b1Sqam4Qz33370t4pQFg?pwd=sypk" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">Mplus</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://pan.baidu.com/s/1E0nukH-qgjVXVrEHvwDlcw?pwd=gbej" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">Stata 17</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://pan.baidu.com/s/1gtqhd_uxfaUDpwRZb7mkeA?pwd=avnr" class="doc-item"
+                                target="_blank">
+                                <span class="doc-title">Lisrel 8.8</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-card repo-style">
+                    <div class="drawer-header" onclick="toggleDrawer(this)">
+                        <div class="drawer-header-text">
+                            <span class="repo-icon">📂 </span>
+                            <span class="repo-title">SAS SID文件</span>
+                        </div>
+                        <div class="drawer-arrow"></div>
+                    </div>
+                    <div class="drawer-body">
+                        <div class="doc-list">
+                            <a href="https://zhuanlan.zhihu.com/p/1944411784183281176" class="doc-item" target="_blank">
+                                <span class="doc-title">SAS 9.4 SID -- 2026/3/29</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://zhuanlan.zhihu.com/p/25567744090" class="doc-item" target="_blank">
+                                <span class="doc-title">SAS 9.4 SID -- 2025/9/14</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://zhuanlan.zhihu.com/p/684840320" class="doc-item" target="_blank">
+                                <span class="doc-title">SAS 9.4 SID -- 2025/3/4</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://zhuanlan.zhihu.com/p/664772984" class="doc-item" target="_blank">
+                                <span class="doc-title">SAS 9.4 SID -- 2024/4/30</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer-card repo-style">
+                    <div class="drawer-header" onclick="toggleDrawer(this)">
+                        <div class="drawer-header-text">
+                            <span class="repo-icon">📂 </span>
+                            <span class="repo-title">推荐网站（统计学）</span>
+                        </div>
+                        <div class="drawer-arrow"></div>
+                    </div>
+                    <div class="drawer-body">
+                        <div class="doc-list">
+                            <a href="https://mengte.online/" class="doc-item" target="_blank">
+                                <span class="doc-title">梦特医数通</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://www.statology.org/" class="doc-item" target="_blank">
+                                <span class="doc-title">Statology</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://www.automateexcel.com/" class="doc-item" target="_blank">
+                                <span class="doc-title">Automate Excel</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://www.statskingdom.com/index.html" class="doc-item" target="_blank">
+                                <span class="doc-title">Statistics Online</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://real-statistics.com/" class="doc-item" target="_blank">
+                                <span class="doc-title">Real Statistics Using Excel</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://www.statsdirect.com/help/contents.htm" class="doc-item" target="_blank">
+                                <span class="doc-title">Statistical Help</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                            <a href="https://meta.stackexchange.com/?newreg=44f8cf6e68f04c7c80a20c1fbd94a270"
+                                class="doc-item" target="_blank">
+                                <span class="doc-title">Meta Stack Exchange</span>
+                                <span class="doc-meta">Uploaded on 2025/12/23</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- resume view -->
+            <div id="view-resume" class="content-section">
+                <div class="resume-section">
+                    <h3 class="resume-header">
+                        💼 <span class="fixed-text" data-key="resume_work_header">Work Experience</span>
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker current"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-head">
+                                    <span class="timeline-date">Mar 2022 - Present</span>
+                                    <h4 class="timeline-title">Senior Biostatistician</h4>
+                                    <span class="timeline-org">CRO</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        1. Responsible for: study design, protocol review, CRF review, sample size
+                                        calculation, randomization, drafting SAP and TFL shells, TFLs review, validity
+                                        of analysis strategies, hosting DRM, drafting SAR.
+                                        <br>
+                                        2. Demonstrate extensive understanding of statistical concepts and
+                                        methodologies. Effectively mentor non-statistical peers with regard to basic
+                                        statistical methodology.
+                                        <br>
+                                        3. Manage activities of statisticians by appropriately coordinating assignments
+                                        and reviewing work so that projects are delivered on time with high quality.
+                                        <br>
+                                        4. Also, I led several corporate innovation and R&D projects, e.g., the
+                                        development of a risk-based Centralized Statistical Monitoring (CSM) system, and
+                                        Risk Based Quality Management (RBQM) system.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-head">
+                                    <span class="timeline-date">Mar 2021 - Feb 2022</span>
+                                    <h4 class="timeline-title">Statistical Researcher</h4>
+                                    <span class="timeline-org">Jinan University</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Provide statistical analysis support for a Chinese language proficiency test
+                                        (abbreviated as HSC), including analyzing the reliability and validity of test
+                                        items, statistical analysis of test scores, and test item database development.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-head">
+                                    <span class="timeline-date">Mar 2020 - Feb 2021</span>
+                                    <h4 class="timeline-title">Data Analyst</h4>
+                                    <span class="timeline-org">Bank of Guangzhou</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Responsible for analyzing and managing the team's business data, maintaining
+                                        existing data reports, and developing new data reports based on new business
+                                        needs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h3 class="resume-header">
+                        🎓 <span class="fixed-text" data-key="resume_edu_header">Education</span>
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-head">
+                                    <span class="timeline-date">Sep 2018 - Jun 2020</span>
+                                    <h4 class="timeline-title">Master of Applied Statistics</h4>
+                                    <span class="timeline-org">Jiangxi University of Finance and Economics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-download">
+                    <a href="javascript:void(0);" class="btn-download"
+                        onclick="alert('Out of consideration for personal privacy protection, I have temporarily disabled the download of PDF resume through this channel. \n\n 出于个人隐私保护的考虑，我暂时禁止了通过此途径下载PDF简历。')">
+                        📥 <span class="fixed-text" data-key="resume_download">Download PDF Resume</span>
+                    </a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">© <span id="year"></span> Calio Xu</span>
+            <span class="divider">|</span>
+            <span>Powered by GitHub Pages, HTML, CSS, and JavaScript</span>
+            <span class="divider">|</span>
+            <span>Last Update Date: 2025-12-23</span>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
