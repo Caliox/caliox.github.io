@@ -99,9 +99,6 @@ function toggleDrawer(headerElement) {
   }
 }
 
-// 更新Footer年份
-document.getElementById('year').innerText = new Date().getFullYear();
-
 // 监听view-profile中的两个pinned box
 function navPinned(tabName, tabSeq, pinnedID) {
   const targetTab = document.querySelectorAll('.tab-item')[tabSeq];
@@ -163,6 +160,10 @@ function renderContent(containerId, dataList) {
 
 // 初始化渲染
 document.addEventListener('DOMContentLoaded', () => {
+
+  document.querySelector("p[data-key='exp_sum']").innerText = othertext[currentLang]['exp_sum'];
+  document.getElementById('year').innerText = new Date().getFullYear();
+  document.getElementById('last-update-date').innerText = footer_date;
   renderContent('view-blogs', blogsData);
   renderContent('view-resources', resourcesData);
 });

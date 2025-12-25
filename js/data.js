@@ -1,5 +1,8 @@
 // --- 数据驱动配置 ---
 
+// Footer最近一次更新日期
+const footer_date = "Last Update Date: 2025-12-25";
+
 // 博客板块数据
 const blogsData = [
   // 生存分析
@@ -105,9 +108,7 @@ const othertext = {
     interest1: "生存分析",
     interest2: "基于风险的监查（RBM）",
     greeting: "我是一名专注于临床试验设计与数据分析的统计师，这里展示了我的临床研究项目经验及掌握的技能。",
-    exp_sum1: "4年临床试验设计及统计分析经验",
-    exp_sum2: "熟悉临床试验过程中统计相关工作，包括试验设计、随机化和编盲、样本量计算、数据审核会、IDMC、统计分析计划和报告等。",
-    exp_sum3: "主持或深度参与近30项临床试验的设计和统计分析工作，治疗领域包括肿瘤、神经系统疾病、肾脏病、眼科、血液系统、辅助生殖、传染病（乙肝）等。"
+    exp_sum: "● 4年临床试验设计及统计分析经验。\n● 熟悉临床试验过程中统计相关工作，包括试验设计、随机化和编盲、样本量计算、数据审核会、IDMC、统计分析计划和报告等。\n● 主持或深度参与近30项临床试验的设计和统计分析工作，治疗领域包括肿瘤、神经系统疾病、肾脏病、眼科、血液系统、辅助生殖、传染病（乙肝）等。"
   },
   'en': {
     bio_title: "Clinical Trial Biostatistician",
@@ -115,8 +116,6 @@ const othertext = {
     interest1: "Survival Analysis",
     interest2: "Risk-based Monitoring",
     greeting: "Hi, I'm a statistician specializing in clinical trial design and data analysis. Here are my project experiences and skills.",
-    exp_sum1: "4 years of experience in clinical trial design and statistical analysis.",
-    exp_sum2: "Familiar with statistical tasks throughout the clinical trial process, including trial design, randomization and blinding, sample size calculation, data review meetings, IDMC, statistical analysis plans and reports.",
-    exp_sum3: "Led or was deeply involved in the design and statistical analysis of nearly 30 clinical trials across therapeutic areas such as oncology, neurological disorders, renal diseases, ophthalmology, hematology, assisted reproduction, communicable diseasesand (Hepatitis B), and more."
+    exp_sum: "● 4 years of experience in clinical trial design and statistical analysis. \n● Familiar with statistical tasks throughout the clinical trial process, including trial design, randomization and blinding, sample size calculation, data review meetings, IDMC, statistical analysis plans and reports. \n● Led or was deeply involved in the design and statistical analysis of nearly 30 clinical trials across therapeutic areas such as oncology, neurological disorders, renal diseases, ophthalmology, hematology, assisted reproduction, communicable diseasesand (Hepatitis B), and more."
   }
 };

@@ -192,6 +192,8 @@ aside {
 
 .exp-summary-text {
   margin: 8px 0;
+  color: var(--text-secondary);
+  line-height: 28px;
 }
 
 .charts-wrapper {
