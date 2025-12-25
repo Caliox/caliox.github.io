@@ -44,29 +44,6 @@ const fixedtext = {
   }
 };
 
-const othertext = {
-  'zh-CN': {
-    bio_title: "临床试验生物统计师",
-    bio_interest: "研究兴趣：",
-    interest1: "生存分析",
-    interest2: "基于风险的监查（RBM）",
-    greeting: "我是一名专注于临床试验设计与数据分析的统计师，这里展示了我的临床研究项目经验及掌握的技能。",
-    exp_sum1: "4年临床试验设计及统计分析经验",
-    exp_sum2: "熟悉临床试验过程中统计相关工作，包括试验设计、随机化和编盲、样本量计算、数据审核会、IDMC、统计分析计划和报告等。",
-    exp_sum3: "主持或深度参与近30项临床试验的设计和统计分析工作，治疗领域包括肿瘤、神经系统疾病、肾脏病、眼科、血液系统、辅助生殖、传染病（乙肝）等。"
-  },
-  'en': {
-    bio_title: "Clinical Trial Biostatistician",
-    bio_interest: "Research Interests:",
-    interest1: "Survival Analysis",
-    interest2: "Risk-based Monitoring",
-    greeting: "Hi, I'm a statistician specializing in clinical trial design and data analysis. Here are my project experiences and skills.",
-    exp_sum1: "4 years of experience in clinical trial design and statistical analysis.",
-    exp_sum2: "Familiar with statistical tasks throughout the clinical trial process, including trial design, randomization and blinding, sample size calculation, data review meetings, IDMC, statistical analysis plans and reports.",
-    exp_sum3: "Led or was deeply involved in the design and statistical analysis of nearly 30 clinical trials across therapeutic areas such as oncology, neurological disorders, renal diseases, ophthalmology, hematology, assisted reproduction, communicable diseasesand (Hepatitis B), and more."
-  }
-};
-
 let currentLang = 'en';
 
 // 语言切换功能
@@ -138,3 +115,54 @@ function navPinned(tabName, tabSeq, pinnedID) {
     toggleDrawer(cardHeader);
   }
 }
+
+// 渲染blogs和resources两个tab
+function renderContent(containerId, dataList) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  let htmlString = '';
+
+  dataList.forEach(section => {
+    const headerIconSpan = section.header.type === 'number'
+      ? `<span class="chapter-num">${section.header.content}</span>`
+      : `<span class="repo-icon">${section.header.content}</span>`;
+
+    const headerClass = section.style === 'repo-style' ? 'repo-title' : 'chapter-title';
+
+    let itemsHtml = '';
+    section.items.forEach(item => {
+      itemsHtml += `
+        <a href="${item.link}" class="doc-item" target="_blank">
+            <span class="doc-title">${item.title}</span>
+            <span class="doc-meta">${item.date}</span>
+        </a>
+      `;
+    });
+
+    htmlString += `
+      <div class="drawer-card ${section.style}" id="${section.id || ''}">
+          <div class="drawer-header" onclick="toggleDrawer(this)">
+              <div class="drawer-header-text">
+                  ${headerIconSpan}
+                  <span class="${headerClass}">${section.header.title}</span>
+              </div>
+              <div class="drawer-arrow"></div>
+          </div>
+          <div class="drawer-body">
+              <div class="doc-list">
+                  ${itemsHtml}
+              </div>
+          </div>
+      </div>
+    `;
+  });
+
+  container.innerHTML = htmlString;
+}
+
+// 初始化渲染
+document.addEventListener('DOMContentLoaded', () => {
+  renderContent('view-blogs', blogsData);
+  renderContent('view-resources', resourcesData);
+});
