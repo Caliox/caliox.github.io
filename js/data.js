@@ -1,7 +1,7 @@
 // --- 数据驱动配置 ---
 
 // Footer最近一次更新日期
-const footer_date = "Last Update Date: 2025-12-25";
+const footer_date = "Last Update Date: 2026-01-04";
 
 // 博客板块数据
 const blogsData = [
@@ -15,13 +15,13 @@ const blogsData = [
       title: "生存分析"
     },
     items: [
-      { title: "1. Introduction to Survival Analysis", date: "2025/12/23", link: "blogs/生存分析/1. Introduction to Survival Analysis.html" },
-      { title: "2. Kaplan-Meier Survival Curves and the Log-Rank Test", date: "2025/12/23", link: "blogs/生存分析/2. Kaplan-Meier Survival Curves and the Log-Rank Test.html" },
-      { title: "3. The Cox Proportional Hazards Model and Its Characteristics", date: "2025/12/23", link: "blogs/生存分析/3. The Cox Proportional Hazards Model and Its Characteristics.html" },
-      { title: "4. Evaluating the Proportional Hazards Assumption", date: "2025/12/23", link: "blogs/生存分析/4. Evaluating the Proportional Hazards Assumption.html" },
-      { title: "5. The Stratified Cox Procedure", date: "2025/12/23", link: "blogs/生存分析/5. The Stratified Cox Procedure.html" },
-      { title: "6. Extension of the Cox Proportional Hazards Model for Time-Dependent Variables", date: "2025/12/23", link: "blogs/生存分析/6. Extension of the Cox Proportional Hazards Model for Time-Dependent Variables .html" },
-      { title: "7. Parametric Survival Models", date: "2025/12/23", link: "blogs/生存分析/7. Parametric Survival Models .html" }
+      { title: "1. 生存分析基本概念", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24822665246" },
+      { title: "2. Kaplan-Meier 生存曲线及 Log-Rank 检验", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24835115991" },
+      { title: "3. Cox比例风险模型及其特征", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24846925550" },
+      { title: "4. 评估比例风险假设", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24855862850" },
+      { title: "5. 分层Cox模型", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24858563372" },
+      { title: "6. 针对时间相关变量的 Cox 比例风险模型扩展", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24864128290" },
+      { title: "7. 参数生存模型", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/24867218658" }
     ]
   },
   // 肿瘤临床试验设计
