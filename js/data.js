@@ -34,11 +34,13 @@ const blogsData = [
       title: "肿瘤临床试验设计"
     },
     items: [
-      { title: "1. Phase I 剂量探索试验简介", date: "2025/12/23", link: "blogs/肿瘤临床试验设计/1. Phase I 剂量探索试验简介.html" },
-      { title: "2. 贝叶斯最优区间 (BOIN)设计", date: "2025/12/23", link: "blogs/肿瘤临床试验设计/2. 贝叶斯最优区间 (BOIN)设计.html" },
-      { title: "3. mTPI设计和键盘（Keyboard）设计", date: "2025/12/23", link: "blogs/肿瘤临床试验设计/3. mTPI设计和键盘（Keyboard）设计.html" },
-      { title: "4. 传统3+3设计和i3+3设计", date: "2025/12/23", link: "blogs/肿瘤临床试验设计/4. 传统3+3设计和i3+3设计.html" },
-      { title: "5. 连续重评估（CRM）设计", date: "2025/12/23", link: "blogs/肿瘤临床试验设计/5. 连续重评估（CRM）设计.html" }
+      { title: "Phase I 剂量探索试验简介", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/590885778" },
+      { title: "贝叶斯最优区间 (BOIN)设计（一）", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/594996282" },
+      { title: "贝叶斯最优区间 (BOIN)设计（二）", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/596011600" },
+      { title: "mTPI设计和键盘（Keyboard）设计原理", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/596080629" },
+      { title: "Keyboard设计的软件操作演示", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/596617959" },
+      { title: "传统3+3设计和i3+3设计", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/635245868" },
+      { title: "连续重评估（CRM）设计", date: "2025/12/23", link: "https://zhuanlan.zhihu.com/p/713686749" }
     ]
   }
 ];
@@ -92,10 +94,12 @@ const resourcesData = [
       { title: "梦特医数通", date: "Uploaded on 2025/12/23", link: "https://mengte.online/" },
       { title: "Statology", date: "Uploaded on 2025/12/23", link: "https://www.statology.org/" },
       { title: "Automate Excel", date: "Uploaded on 2025/12/23", link: "https://www.automateexcel.com/" },
-      { title: "Statistics Online", date: "Uploaded on 2025/12/23", link: "https://www.statskingdom.com/index.html" },
+      { title: "Statistics Kindom", date: "Uploaded on 2025/12/23", link: "https://www.statskingdom.com/index.html" },
       { title: "Real Statistics Using Excel", date: "Uploaded on 2025/12/23", link: "https://real-statistics.com/" },
       { title: "Statistical Help", date: "Uploaded on 2025/12/23", link: "https://www.statsdirect.com/help/contents.htm" },
-      { title: "Meta Stack Exchange", date: "Uploaded on 2025/12/23", link: "https://meta.stackexchange.com/?newreg=44f8cf6e68f04c7c80a20c1fbd94a270" }
+      { title: "Meta Stack Exchange", date: "Uploaded on 2025/12/23", link: "https://meta.stackexchange.com/?newreg=44f8cf6e68f04c7c80a20c1fbd94a270" },
+      { title: "Introductory Statistics", date: "Uploaded on 2026/01/04", link: "https://saylordotorg.github.io/text_introductory-statistics/" },
+      { title: "JAMA Guide to Statistics and Methods", date: "Uploaded on 2026/01/04", link: "https://jamanetwork.com/collections/44042/jama-guide-to-statistics-and-methods" }
     ]
   }
 ];
