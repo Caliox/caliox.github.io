@@ -85,6 +85,87 @@ function switchTab(tabName, clickedElement) {
   clickedElement.classList.add('active');
 }
 
+// 初始化Chart.js图表
+function initCharts() {
+  const commonOptions = {
+    responsive: true,
+    maintainAspectRatio: false, // 允许图表填满容器高度
+    plugins: {
+      legend: {
+        position: 'bottom', // 图例在下方
+        labels: { boxWidth: 12, padding: 20 }
+      },
+      tooltip: {
+        mode: 'index',
+        intersect: false, // 鼠标悬停时同时显示两组数据
+      }
+    },
+    scales: {
+      x: { stacked: true, grid: { display: false } }, // X轴堆叠，不显示网格
+      y: { stacked: true, beginAtZero: true }         // Y轴堆叠
+    }
+  };
+
+  // 渲染 Phase 图表
+  const ctxPhase = document.getElementById('chart-phase');
+  if (ctxPhase) {
+    new Chart(ctxPhase, {
+      type: 'bar',
+      data: statsData.projectPhase,
+      options: {
+        ...commonOptions,
+        plugins: {
+          ...commonOptions.plugins,
+          title: { display: true, text: 'Projects by Phase', font: { size: 16 } }
+        }
+      }
+    });
+  }
+
+  // 渲染 Therapy 图表
+  const ctxTherapy = document.getElementById('chart-therapy');
+  if (ctxTherapy) {
+    new Chart(ctxTherapy, {
+      type: 'bar',
+      data: statsData.therapyArea,
+      options: {
+        ...commonOptions,
+        plugins: {
+          ...commonOptions.plugins,
+          title: { display: true, text: 'Projects by Therapy Area', font: { size: 16 } }
+        }
+      }
+    });
+  }
+}
+
+// 渲染技能条
+function renderSkillBars() {
+  const skillContainers = document.querySelectorAll('.skill-container');
+
+  skillContainers.forEach(container => {
+    const level = parseInt(container.getAttribute('data-level') || 0);
+    const segmentContainer = container.querySelector('.skill-segments');
+
+    if (segmentContainer) {
+      segmentContainer.innerHTML = ''; // 清空原有内容
+
+      // 创建 4 个格子
+      for (let i = 1; i <= 4; i++) {
+        const segment = document.createElement('div');
+        segment.classList.add('segment');
+
+        // 如果当前格子序号 <= 技能等级，则添加 .filled 类
+        if (i <= level) {
+          segment.classList.add('filled');
+        }
+
+        segmentContainer.appendChild(segment);
+      }
+    }
+  });
+}
+
 // 抽屉展开/收起功能
 function toggleDrawer(headerElement) {
   const card = headerElement.parentElement; // 找到 .drawer-card
@@ -164,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector("p[data-key='exp_sum']").innerText = othertext[currentLang]['exp_sum'];
   document.getElementById('year').innerText = new Date().getFullYear();
   document.getElementById('last-update-date').innerText = footer_date;
+  initCharts();
+  renderSkillBars();
   renderContent('view-blogs', blogsData);
   renderContent('view-resources', resourcesData);
 });

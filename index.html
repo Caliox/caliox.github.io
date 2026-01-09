@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/index.css">
     <!--icon font online style-->
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4446551_j0zhn8zsg1h.css" />
+    <!--Chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -82,69 +84,55 @@
                     <p class="exp-summary-text other-text" data-key="exp_sum"></p>
                     <div class="charts-wrapper">
                         <div class="chart-container">
-                            <img src="assets/images/Exp-Phase.png" alt="Experience Summary by Phase">
+                            <canvas id="chart-phase"></canvas>
                         </div>
                         <div class="chart-container">
-                            <img src="assets/images/Exp-Therapy.png" alt="Experience Summary by Phase">
+                            <canvas id="chart-therapy"></canvas>
                         </div>
                     </div>
                     <h4 style="margin-top:20px;">🛠️ <span class="fixed-text" data-key="rm_Skill">My Skills</span></h4>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="4">
                         <div class="skill-meta">
                             <span>SAS</span><span class="fixed-text" data-key="skill_grd4">Expert</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 100%;"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="4">
                         <div class="skill-meta">
                             <span>SQL Language</span><span class="fixed-text" data-key="skill_grd4">Expert</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 100%"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="3">
                         <div class="skill-meta">
                             <span>R Language</span><span class="fixed-text" data-key="skill_grd3">Proficient</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 75%; background-color:var(--skill-color3)"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="2">
                         <div class="skill-meta">
                             <span>Python</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="2">
                         <div class="skill-meta">
                             <span>C-Sharp</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="2">
                         <div class="skill-meta">
                             <span>VBA</span><span class="fixed-text" data-key="skill_grd2">Competent</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
-                    <div class="skill-container">
+                    <div class="skill-container" data-level="2">
                         <div class="skill-meta">
                             <span>Front-End Development (HTML+CSS+JavaScript)</span>
                             <span class="fixed-text" data-key="skill_grd2">Competent</span>
                         </div>
-                        <div class="progress-bg">
-                            <div class="progress-fill" style="width: 50%; background-color:var(--skill-color2)"></div>
-                        </div>
+                        <div class="skill-segments"></div>
                     </div>
                 </div>
                 <h3 style="font-size:16px; margin-bottom:10px;">

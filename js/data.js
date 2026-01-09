@@ -1,7 +1,7 @@
 // --- 数据驱动配置 ---
 
 // Footer最近一次更新日期
-const footer_date = "Last Update Date: 2026-01-04";
+const footer_date = "Last Update Date: 2026-01-09";
 
 // 博客板块数据
 const blogsData = [
@@ -121,5 +121,43 @@ const othertext = {
     interest2: "Risk-based Monitoring",
     greeting: "Hi, I'm a statistician specializing in clinical trial design and data analysis. Here are my project experiences and skills.",
     exp_sum: "● 4 years of experience in clinical trial design and statistical analysis. \n● Familiar with statistical tasks throughout the clinical trial process, including trial design, randomization and blinding, sample size calculation, data review meetings, IDMC, statistical analysis plans and reports. \n● Led or was deeply involved in the design and statistical analysis of nearly 30 clinical trials across therapeutic areas such as oncology, neurological disorders, renal diseases, ophthalmology, hematology, assisted reproduction, communicable diseasesand (Hepatitis B), and more."
+  }
+};
+
+// 统计图表数据
+const statsData = {
+  projectPhase: {
+    labels: ['Phase I', 'Phase II', 'Phase III', 'Phase IV', 'IIT & Other'],
+    datasets: [
+      {
+        label: 'IDMC',
+        data: [0, 1, 3, 0, 0],
+        backgroundColor: '#2da44e',
+        stack: 'Stack 0',
+      },
+      {
+        label: 'Whole Study',
+        data: [9, 3, 3, 1, 3],
+        backgroundColor: '#0969da',
+        stack: 'Stack 0',
+      }
+    ]
+  },
+  therapyArea: {
+    labels: ['Oncology', 'Ophthalmology', 'Neuro Disorders', 'Other'],
+    datasets: [
+      {
+        label: 'IDMC',
+        data: [4, 0, 0, 0],
+        backgroundColor: '#2da44e',
+        stack: 'Stack 0',
+      },
+      {
+        label: 'Whole Study',
+        data: [11, 2, 2, 4],
+        backgroundColor: '#0969da',
+        stack: 'Stack 0',
+      }
+    ]
   }
 };

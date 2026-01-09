@@ -204,10 +204,11 @@ aside {
 }
 
 .chart-container {
+  position: relative;
   flex: 1;
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
   background-color: #fff;
   height: 260px;
@@ -232,17 +233,23 @@ aside {
   font-size: 12px;
 }
 
-.progress-bg {
-  height: 8px;
-  background: #eff1f3;
-  border-radius: 4px;
-  overflow: hidden;
+.skill-segments {
+  display: flex;
+  gap: 4px;
   margin-top: 6px;
+  height: 8px;
 }
 
-.progress-fill {
+.segment {
+  flex: 1;
   height: 100%;
-  background: var(--btn-primary-bg);
+  border-radius: 4px;
+  background-color: #eff1f3;
+  transition: background-color 0.3s ease;
+}
+
+.segment.filled {
+  background-color: #4ac26b;
 }
 
 .pin-container {
