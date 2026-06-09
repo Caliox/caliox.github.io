@@ -1,7 +1,7 @@
 // --- 数据驱动配置 ---
 
 // Footer最近一次更新日期
-const footer_date = "Last Update Date: 2026-01-09";
+const footer_date = "Last Update Date: 2026-06-09";
 
 // 博客板块数据
 const blogsData = [
@@ -128,17 +128,17 @@ const othertext = {
 // 统计图表数据
 const statsData = {
   projectPhase: {
-    labels: ['Phase I', 'Phase II', 'Phase III', 'Phase IV', 'IIT & Other'],
+    labels: ['Phase I', 'Phase I/II', 'Phase II', 'Phase III', 'Phase IV', 'IIT & Other'],
     datasets: [
       {
         label: 'IDMC',
-        data: [0, 1, 3, 0, 0],
+        data: [0, 0, 1, 3, 0, 0],
         backgroundColor: '#2da44e',
         stack: 'Stack 0',
       },
       {
         label: 'Whole Study',
-        data: [9, 3, 3, 1, 3],
+        data: [10, 2, 3, 3, 1, 3],
         backgroundColor: '#0969da',
         stack: 'Stack 0',
       }
@@ -155,7 +155,7 @@ const statsData = {
       },
       {
         label: 'Whole Study',
-        data: [11, 2, 2, 4],
+        data: [13, 2, 2, 5],
         backgroundColor: '#0969da',
         stack: 'Stack 0',
       }
